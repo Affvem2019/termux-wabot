@@ -19,7 +19,12 @@
 ## Clone this project
 
 ```bash
+> pkg update && pkg upgrade
+> pkg install git
 > git clone https://github.com/MhankBarBar/termux-wabot
+> cd termux-wabot
+> bash install.sh
+> npm start
 ```
 
 ## Install the dependencies:
