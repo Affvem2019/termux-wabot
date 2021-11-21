@@ -367,7 +367,7 @@ async function starts() {
 								console.log(`Error : ${err}`)
 								fs.unlinkSync(media)
 								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-								reply(`❌ Gagal, pada saat mengkonversi ${tipe} ke stiker`)
+								reply(`❌ Falha ao converter ${tipe} em stiker`)
 							})
 							.on('end', function () {
 								console.log('Finish')
@@ -430,7 +430,7 @@ async function starts() {
 							.toFormat('webp')
 							.save(ran)*/
 					} else {
-						reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
+						reply(`Envie uma imagem com a legenda ${prefix}sticker ou marque a imagem que foi enviada`)
 					}
 					break
 				case 'gtts':
