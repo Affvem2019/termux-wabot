@@ -172,7 +172,7 @@ async function starts() {
 			if (authorname != undefined) { } else { authorname != undefined }	
 			
 			function addMetadata(packname, author) {	
-				if (!packname) packname = 'WABot'; if (!author) author = '9672-4995';	
+				if (!packname) packname = 'WABot'; if (!author) author = '∆¶×';	
 				author = author.replace(/[^a-zA-Z0-9]/g, '');	
 				let name = `${author}_${packname}`
 				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
@@ -341,7 +341,7 @@ async function starts() {
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('nokia', '9672-4995')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata(':)', '∆¶×')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									client.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: mek})
 									fs.unlinkSync(media)	
@@ -372,7 +372,7 @@ async function starts() {
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('nokia', '9672-4995')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata(':)', '∆¶×')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									client.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: mek})
 									fs.unlinkSync(media)
