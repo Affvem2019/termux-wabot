@@ -19,9 +19,10 @@
 ## Clone this project
 
 ```bash
+> termux-setup-storage
 > pkg update && pkg upgrade
 > pkg install git
-> git clone https://github.com/maicosilver/termux-wabot
+> git clone https://github.com/Affvem2019/termux-wabot
 > cd termux-wabot
 > bash install.sh
 > npm start
